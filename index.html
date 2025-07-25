@@ -1,0 +1,863 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="description" content="Building visual, analytical, and participatory tools that improve how planners and citizens understand, navigate, and shape urban systems.">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="">
+
+      <!-- Alpine.js - Load first -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+      <title>The Visual Thinking Company - Visual Intelligence Tools for Urban Planning</title>
+      <!-- SEO Description -->
+      <meta name="description" content="Building visual, analytical, and participatory tools that improve how planners and citizens understand, navigate, and shape urban systems.">
+
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      
+      <!-- Core CSS and Scripts -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      
+      <!-- Project-specific styles -->
+      <style>
+        /* Base styles */
+        :root {
+          --primary-color: #3A73EB;
+          --secondary-color: #2F2F2F;
+          --accent-color: ;
+        }
+
+        /* Strict no-scrollbar rules */
+        * {
+          -ms-overflow-style: none !important;  /* IE and Edge */
+          scrollbar-width: none !important;     /* Firefox */
+        }
+        *::-webkit-scrollbar {
+          display: none !important;             /* Chrome, Safari and Opera */
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+          font-family: Inter, Inter, system-ui, sans-serif;
+        }
+        body {
+          font-family: Inter, Inter, system-ui, sans-serif;
+        }
+
+        /* Interactive elements */
+        .interactive-element {
+          transition: all 0.3s ease;
+        }
+        .interactive-element:hover {
+          transform: translateY(-2px);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 8px;
+          height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+          background: #555;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+        .fade-in {
+          animation: fadeIn 0.5s ease-in-out;
+        }
+      </style>
+
+      <!-- Dynamic Meta Tags -->
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <meta name="robots" content="">
+      <meta property="og:title" content="">
+      <meta property="og:description" content="">
+      <meta property="og:image" content="">
+      <meta property="og:type" content="website">
+      <meta property="og:locale" content="en_US">
+      <meta property="og:site_name" content="The Visual Thinking Company">
+      
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="">
+
+      <!-- Header Scripts -->
+      <script id="header-scripts">
+        // This script tag will be replaced with actual scripts.head content
+        if (window.scripts && window.scripts.head) {
+          document.getElementById('header-scripts').outerHTML = window.scripts.head;
+        }
+      </script>
+
+      <!-- Project Configuration -->
+      <script>
+        window.projectConfig = {
+          name: 'The Visual Thinking Company',
+          type: '',
+          settings: {
+            colors: {
+              primary: '#3A73EB',
+              secondary: '#2F2F2F',
+              accent: ''
+            },
+            fonts: {
+              primary: 'Inter',
+              secondary: 'Inter'
+            }
+          }
+        };
+      </script>
+   </head>
+   <body class="antialiased text-gray-900 bg-white min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative h-full">
+        <mountpoint>
+          <div id="RolloutPageContent"><element id="34c68585-902c-450b-abdf-2fa317aae420" data-section-id="34c68585-902c-450b-abdf-2fa317aae420">
+
+
+                
+                
+                
+                <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-neutral-200" id="el-xnv3dfvv">
+    <div class="container mx-auto px-4 py-4" id="el-svl6xftf">
+        <div class="flex items-center justify-between" id="el-p92oxms1">
+            <!-- Logo -->
+            <div class="font-inter text-xl font-extrabold tracking-tight leading-none" id="el-elyiff6x">
+                <div id="el-vg52ahnd">The</div>
+                <div id="el-0sim162y">Visual</div>
+                <div id="el-yet4n03j">Thinking</div>
+                <div id="el-ezkq4mjx">Company</div>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex items-center space-x-8" id="el-6o6zqty5">
+                
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="lg:hidden p-2 text-neutral-700" aria-label="Toggle menu">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" id="el-4hyiwrcd">
+                    <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" id="el-8q7ditmo"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-4">
+            <div class="flex flex-col space-y-4" id="el-wwlzj9zb">
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+<script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+            mobileMenu.classList.add('hidden');
+        }
+    });
+
+    // Close menu on ESC key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            mobileMenu.classList.add('hidden');
+        }
+    });
+</script>
+              
+              
+              
+              
+</element><element id="6517bf1e-6145-43aa-bed1-4569cd47f1da" data-section-id="6517bf1e-6145-43aa-bed1-4569cd47f1da">
+
+
+                
+                
+                
+                <section id="manifesto" class="py-24 px-4 md:px-8 lg:px-12 min-h-screen flex items-center bg-white">
+    <div class="max-w-7xl mx-auto w-full" id="el-j1c8sd8s">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20" id="el-24myqh8x">
+            <div class="space-y-6" id="el-dqrym138">
+                <div class="uppercase tracking-widest text-sm font-semibold text-neutral-600" id="el-buv47ek2">We Build</div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight" id="el-xvevls6k">
+                    VTC builds visual, analytical, and participatory tools that improve how planners and citizens understand, navigate, and shape urban systems.
+                </h1>
+            </div>
+            
+            <div class="space-y-6" id="el-uxdm5m99">
+                <div class="uppercase tracking-widest text-sm font-semibold text-neutral-600" id="el-ufdlxo7y">We Standardize</div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight" id="el-ugp4g1gp">
+                    VTC standardizes visual intelligence for public systems, equipping every city with tools that clarify civic structure and expand public access to institutional memory.
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+              
+              
+              
+              
+</element><element id="5af3d2e3-e1dc-4d52-8e87-f5b4e64ffa3f" data-section-id="5af3d2e3-e1dc-4d52-8e87-f5b4e64ffa3f">
+
+
+                
+                
+                
+                
+<section id="system" class="bg-neutral-50 py-24 px-4 md:px-8 lg:px-12">
+    <div class="max-w-7xl mx-auto" id="el-a26oo85g">
+        <div class="text-center mb-16" id="el-7rhth6aa">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-6" id="el-0xgj00jp">The VTC System</h2>
+            <p class="text-lg text-neutral-600 max-w-3xl mx-auto" id="el-vdu5whl5">
+                VTC builds to correct systemic dysfunctions in civic planning through a unified, data-driven approach.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20" id="el-2b5mb4we">
+            <div id="el-e6f6tymv">
+                <h3 class="text-2xl font-semibold mb-8" id="el-fyb7w49c">The Problem: Systemic Dysfunctions</h3>
+                <div class="space-y-4" id="el-6mniw4dx">
+                    <div class="bg-white border border-neutral-200 rounded-xl overflow-hidden transition-all duration-300" id="el-xwon8v72">
+                        <button class="w-full flex justify-between items-start p-6 text-left hover:bg-neutral-50 transition-colors" onclick="toggleExpand(this)" id="el-7h8gj5kd">
+                            <div id="el-m2itg1pd">
+                                <h4 class="text-lg font-semibold mb-2" id="el-w8qpjrvh">The Vertical-Horizontal Disconnect</h4>
+                                <p class="text-neutral-600" id="el-pownq3f9">Government operates in vertical ministries while human needs cut horizontally across them.</p>
+                            </div>
+                            <span class="text-blue-500 text-2xl transform transition-transform duration-300" id="el-6hqbjsga">+</span>
+                        </button>
+                        <div class="hidden p-6 pt-0 border-t border-neutral-200" id="el-a2sla43u">
+                            <p class="text-sm text-neutral-600" id="el-jdat1e4c">
+                                <strong id="el-va08j163">Real Impact:</strong> A family must navigate 12+ separate systems to address interconnected needs.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-neutral-200 rounded-xl overflow-hidden transition-all duration-300" id="el-ysnbk14v">
+                        <button class="w-full flex justify-between items-start p-6 text-left hover:bg-neutral-50 transition-colors" onclick="toggleExpand(this)" id="el-d0k06y4u">
+                            <div id="el-5n0igde9">
+                                <h4 class="text-lg font-semibold mb-2" id="el-66uwfe5a">The Data Fragmentation Crisis</h4>
+                                <p class="text-neutral-600" id="el-2dpqb37p">Critical planning data exists in incompatible formats across disconnected systems.</p>
+                            </div>
+                            <span class="text-blue-500 text-2xl transform transition-transform duration-300" id="el-iwgzt74x">+</span>
+                        </button>
+                        <div class="hidden p-6 pt-0 border-t border-neutral-200" id="el-tb50zdxv">
+                            <p class="text-sm text-neutral-600" id="el-gn01eh6k">
+                                <strong id="el-0fsjtb6d">Real Impact:</strong> A school district must rebuild enrollment projections that already exist in provincial housing data.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-neutral-200 rounded-xl overflow-hidden transition-all duration-300" id="el-vawgcw7d">
+                        <button class="w-full flex justify-between items-start p-6 text-left hover:bg-neutral-50 transition-colors" onclick="toggleExpand(this)" id="el-2zb5tc5u">
+                            <div id="el-cf3p23is">
+                                <h4 class="text-lg font-semibold mb-2" id="el-gu1yj6o4">The Institutional Memory Failure</h4>
+                                <p class="text-neutral-600" id="el-pkgbrui8">Planning knowledge evaporates with each election cycle and staff transition.</p>
+                            </div>
+                            <span class="text-blue-500 text-2xl transform transition-transform duration-300" id="el-i2vknohg">+</span>
+                        </button>
+                        <div class="hidden p-6 pt-0 border-t border-neutral-200" id="el-yvvg3tx7">
+                            <p class="text-sm text-neutral-600" id="el-unww5d35">
+                                <strong id="el-w0sx8iw5">Real Impact:</strong> New school trustees spend over 200 hours rediscovering planning decisions made just 3 years earlier.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-neutral-200 rounded-xl overflow-hidden transition-all duration-300" id="el-r8jkhcw7">
+                        <button class="w-full flex justify-between items-start p-6 text-left hover:bg-neutral-50 transition-colors" onclick="toggleExpand(this)" id="el-6orixy6v">
+                            <div id="el-93rgfpic">
+                                <h4 class="text-lg font-semibold mb-2" id="el-xk24r7dt">The Public Trust Deficit</h4>
+                                <p class="text-neutral-600" id="el-8kr2fc9t">Planning processes appear opaque and unresponsive to citizens.</p>
+                            </div>
+                            <span class="text-blue-500 text-2xl transform transition-transform duration-300" id="el-i7s2fqnw">+</span>
+                        </button>
+                        <div class="hidden p-6 pt-0 border-t border-neutral-200" id="el-tj0w9a82">
+                            <p class="text-sm text-neutral-600" id="el-4ja6k3xz">
+                                <strong id="el-1mndiw6z">Real Impact:</strong> Community opposition to development increases, delaying critical housing projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="el-jxot72jw">
+                <h3 class="text-2xl font-semibold mb-8" id="el-k83ehf2k">Our Solution: The Diagonal Approach</h3>
+                <div class="bg-white border border-neutral-200 rounded-xl p-8" id="el-p9xk0g2r">
+                    <p class="text-neutral-600 mb-8" id="el-0psryfo9">
+                        Unlike traditional solutions that operate in silos, VTC works diagonally to integrate data and align stakeholders across institutional boundaries, creating a coherent view of the entire civic ecosystem.
+                    </p>
+
+                    <div class="space-y-8" id="el-6rts4464">
+                        <div class="flex items-center gap-6" id="el-tgzeujry">
+                            <div class="w-10 h-10 relative flex-shrink-0" id="el-ltx2p1bk">
+                                <div class="absolute inset-0 flex items-center justify-center" id="el-p8v7iejs">
+                                    <div class="w-1 h-10 bg-red-500 rounded-full" id="el-3oqtod3e"></div>
+                                </div>
+                            </div>
+                            <div id="el-v3to646h">
+                                <h4 class="text-lg font-semibold mb-2" id="el-cfyl4dhm">Vertical Integration</h4>
+                                <p class="text-sm text-neutral-600" id="el-uu7cw2dy">Connecting school boards to ministries, municipalities to provinces.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-6" id="el-ql5uykvf">
+                            <div class="w-10 h-10 relative flex-shrink-0" id="el-3a0adtnw">
+                                <div class="absolute inset-0 flex items-center justify-center" id="el-z5kpsjmr">
+                                    <div class="w-10 h-1 bg-blue-500 rounded-full" id="el-s6jsmk6q"></div>
+                                </div>
+                            </div>
+                            <div id="el-7a0v7jzv">
+                                <h4 class="text-lg font-semibold mb-2" id="el-b4cbbyzf">Horizontal Connection</h4>
+                                <p class="text-sm text-neutral-600" id="el-fwdrh7sv">Linking education, healthcare, housing, and transportation data.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-6" id="el-mkje18u1">
+                            <div class="w-10 h-10 relative flex-shrink-0" id="el-8e1uwey0">
+                                <div class="absolute inset-0 flex items-center justify-center" id="el-1s4s29pg">
+                                    <div class="w-1 h-14 bg-green-500 rounded-full transform -rotate-45" id="el-9qcl06lu"></div>
+                                </div>
+                            </div>
+                            <div id="el-m0bb44h4">
+                                <h4 class="text-lg font-semibold mb-2" id="el-hurt37vb">The Diagonal Approach</h4>
+                                <p class="text-sm text-neutral-600" id="el-bckr615f">Synthesizing vertical and horizontal data to empower users and enable true systems-level planning.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleExpand(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('span');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(45deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</section>
+              
+              
+              
+              
+</element><element id="bebea5e4-2ce6-4f1b-a569-c7b8e744962f" data-section-id="bebea5e4-2ce6-4f1b-a569-c7b8e744962f">
+
+
+                
+                
+                
+                <section id="technology" class="py-24 px-4 md:px-8 lg:px-12">
+    <div class="max-w-3xl mx-auto" id="el-wn9l9wrx">
+        <div class="text-center mb-16" id="el-q5r9zutp">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-6" id="el-iyk2ha2x">Core Technology</h2>
+            <p class="text-lg text-neutral-600" id="el-11d7gt1x">
+                Our platforms provide the foundation for integrated civic intelligence.
+            </p>
+        </div>
+        
+        <div class="flex justify-center space-x-10 border-b border-neutral-200 mb-12" id="el-ie3kt8ly">
+            <button class="tab-btn active pb-4 px-1 text-blue-500 border-b-2 border-blue-500 font-semibold relative" data-tab="sid" id="el-lf7lboas">
+                Social Infrastructure Database (SID)
+            </button>
+            <button class="tab-btn pb-4 px-1 text-neutral-600 hover:text-neutral-900 transition-colors" data-tab="vtconnect" id="el-npg48x8g">
+                VTConnect
+            </button>
+        </div>
+        
+        <div id="tab-content" class="transition-all duration-300">
+            <div class="text-center mb-12" id="el-jk5etmyi">
+                <h3 class="text-2xl font-semibold mb-4" id="tab-title">The Central Nervous System for Integrated Planning</h3>
+                <p class="text-neutral-600" id="tab-description">The SID serves as our foundational data layer. It is not just a database, but a coherent system that links education, health, housing, and mobility data, providing a unified foundation for cross-sector planning.</p>
+            </div>
+            
+            <div class="space-y-6" id="feature-list">
+                <div class="flex items-start" id="el-4m3mgkhl">
+                    <div class="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-4 flex-shrink-0" id="el-9luuaj24"></div>
+                    <p class="text-neutral-800" id="el-t137kit9">Tensor-Based Demographic Modeling</p>
+                </div>
+            
+                <div class="flex items-start" id="el-pu9v20yg">
+                    <div class="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-4 flex-shrink-0" id="el-w8olxd1y"></div>
+                    <p class="text-neutral-800" id="el-si1vbta6">Cross-Domain Correlation Engine</p>
+                </div>
+            
+                <div class="flex items-start" id="el-f6sriw0q">
+                    <div class="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-4 flex-shrink-0" id="el-7hx5o09c"></div>
+                    <p class="text-neutral-800" id="el-hjjt6mxc">Protocol-First Architecture (NANDA, MCP)</p>
+                </div>
+            
+                <div class="flex items-start" id="el-fzoaq2o0">
+                    <div class="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-4 flex-shrink-0" id="el-b31njsbz"></div>
+                    <p class="text-neutral-800" id="el-132yklcl">Scheduled Synchronized Updates for data integrity</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const techData = {
+            sid: {
+                title: 'The Central Nervous System for Integrated Planning',
+                description: 'The SID serves as our foundational data layer. It is not just a database, but a coherent system that links education, health, housing, and mobility data, providing a unified foundation for cross-sector planning.',
+                features: [
+                    'Tensor-Based Demographic Modeling',
+                    'Cross-Domain Correlation Engine',
+                    'Protocol-First Architecture (NANDA, MCP)',
+                    'Scheduled Synchronized Updates for data integrity'
+                ]
+            },
+            vtconnect: {
+                title: 'Agentic Planning & Relationship Intelligence',
+                description: 'More than a CRM, VTConnect is a system for agentic planning that measures "extreme coherence" across relationships, documents, and planning patterns. It uses AI to assist expert judgment and speed up coherent decision-making.',
+                features: [
+                    'Extreme Coherence Measurement Engine',
+                    'Emergence Point Detection',
+                    'Agentic Proposal Generation',
+                    'Graph-based relationship and influence mapping'
+                ]
+            }
+        };
+
+        function renderTab(tabId) {
+            const data = techData[tabId];
+            document.getElementById('tab-title').textContent = data.title;
+            document.getElementById('tab-description').textContent = data.description;
+            
+            const featureList = document.getElementById('feature-list');
+            featureList.innerHTML = data.features.map(feature => `
+                <div class="flex items-start">
+                    <div class="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-4 flex-shrink-0"></div>
+                    <p class="text-neutral-800">${feature}</p>
+                </div>
+            `).join('');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('.tab-btn');
+            renderTab('sid');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => {
+                        t.classList.remove('active', 'text-blue-500', 'border-b-2', 'border-blue-500', 'font-semibold');
+                        t.classList.add('text-neutral-600');
+                    });
+                    
+                    tab.classList.add('active', 'text-blue-500', 'border-b-2', 'border-blue-500', 'font-semibold');
+                    tab.classList.remove('text-neutral-600');
+                    
+                    renderTab(tab.dataset.tab);
+                });
+            });
+        });
+    </script>
+</section>
+              
+              
+              
+              
+</element><element id="46d9c208-1ed3-4076-8680-c73d40951454" data-section-id="46d9c208-1ed3-4076-8680-c73d40951454">
+
+
+                
+                
+                
+                <section id="products" class="bg-neutral-50 py-24 px-4 md:px-8 lg:px-12">
+    <div class="max-w-7xl mx-auto" id="el-4gl6e6df">
+        <div class="text-center mb-16" id="el-9u66u78n">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-6" id="el-vrocw2yp">Product Ecosystem</h2>
+            <p class="text-lg text-neutral-600 max-w-3xl mx-auto" id="el-p74akvug">
+                VTC provides a suite of modular tools for planners and citizens, standardizing data into actionable insights.
+            </p>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-4 mb-16" id="el-qvl2byy9">
+            <button class="filter-button active px-6 py-3 rounded-full border-2 border-blue-500 bg-blue-500 text-white font-medium transition-all duration-300" data-filter="all" id="el-c38bgk0o">
+                All
+            </button>
+            <button class="filter-button px-6 py-3 rounded-full border-2 border-neutral-200 text-neutral-700 font-medium hover:bg-neutral-50 transition-all duration-300" data-filter="education" id="el-2v7rh00z">
+                Education
+            </button>
+            <button class="filter-button px-6 py-3 rounded-full border-2 border-neutral-200 text-neutral-700 font-medium hover:bg-neutral-50 transition-all duration-300" data-filter="healthcare" id="el-br49p5cp">
+                Healthcare
+            </button>
+            <button class="filter-button px-6 py-3 rounded-full border-2 border-neutral-200 text-neutral-700 font-medium hover:bg-neutral-50 transition-all duration-300" data-filter="urban-planning" id="el-8zduztdz">
+                Urban Planning
+            </button>
+            <button class="filter-button px-6 py-3 rounded-full border-2 border-neutral-200 text-neutral-700 font-medium hover:bg-neutral-50 transition-all duration-300" data-filter="housing" id="el-yljlkgke">
+                Housing
+            </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="products-grid">
+                <div class="bg-white border border-neutral-200 rounded-xl p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1" id="el-cqiw1y9u">
+                    <div class="flex justify-between items-start mb-4" id="el-0r9m4jbs">
+                        <h3 class="text-xl font-semibold pr-4" id="el-957pn975">Metro Vancouver School Space Finder</h3>
+                        <span class="px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-green-100 text-green-700" id="el-q2429i4q">free</span>
+                    </div>
+                    <p class="text-neutral-600" id="el-w4ld1pjd">Public tool helping families navigate school selection.</p>
+                </div>
+            
+                <div class="bg-white border border-neutral-200 rounded-xl p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1" id="el-ca25kv5b">
+                    <div class="flex justify-between items-start mb-4" id="el-wdyue83v">
+                        <h3 class="text-xl font-semibold pr-4" id="el-y14o9edr">The Catchment Maker</h3>
+                        <span class="px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-blue-50 text-blue-500" id="el-1xeddo6t">commercial</span>
+                    </div>
+                    <p class="text-neutral-600" id="el-1laixqnm">Optimizes school boundaries and enrollment forecasting.</p>
+                </div>
+            
+                <div class="bg-white border border-neutral-200 rounded-xl p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1" id="el-g81pt75f">
+                    <div class="flex justify-between items-start mb-4" id="el-n00tbd3h">
+                        <h3 class="text-xl font-semibold pr-4" id="el-rkj40yu9">Find a Doctor</h3>
+                        <span class="px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-green-100 text-green-700" id="el-8m1qvle6">free</span>
+                    </div>
+                    <p class="text-neutral-600" id="el-hm1fp3oc">Connects citizens with healthcare providers.</p>
+                </div>
+            
+                <div class="bg-white border border-neutral-200 rounded-xl p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1" id="el-51kia7hc">
+                    <div class="flex justify-between items-start mb-4" id="el-f0dsc0xc">
+                        <h3 class="text-xl font-semibold pr-4" id="el-mbitatdw">Healthcare Optimizer</h3>
+                        <span class="px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-blue-50 text-blue-500" id="el-xz1ar165">commercial</span>
+                    </div>
+                    <p class="text-neutral-600" id="el-c4gomvs0">Plans and distributes healthcare resources efficiently.</p>
+                </div>
+            
+                <div class="bg-white border border-neutral-200 rounded-xl p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1" id="el-lc5923gf">
+                    <div class="flex justify-between items-start mb-4" id="el-8h49ecdy">
+                        <h3 class="text-xl font-semibold pr-4" id="el-klaztyhe">Canada's Civic Guide</h3>
+                        <span class="px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-green-100 text-green-700" id="el-f5yce2xg">free</span>
+                    </div>
+                    <p class="text-neutral-600" id="el-u5yet50u">Visualizes municipal services and community assets.</p>
+                </div>
+            
+                <div class="bg-white border border-neutral-200 rounded-xl p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1" id="el-a15uilnh">
+                    <div class="flex justify-between items-start mb-4" id="el-dwkea5yx">
+                        <h3 class="text-xl font-semibold pr-4" id="el-yncsnru1">Social Infrastructure Optimizer</h3>
+                        <span class="px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-blue-50 text-blue-500" id="el-yfkqeclr">commercial</span>
+                    </div>
+                    <p class="text-neutral-600" id="el-e243h62g">Enhances planning decisions with cross-domain data.</p>
+                </div>
+            
+                <div class="bg-white border border-neutral-200 rounded-xl p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1" id="el-vwrc2dp4">
+                    <div class="flex justify-between items-start mb-4" id="el-kw0r2f21">
+                        <h3 class="text-xl font-semibold pr-4" id="el-91blrwoz">Real Estate Helper</h3>
+                        <span class="px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-100 text-amber-700" id="el-nq5pufpo">low cost</span>
+                    </div>
+                    <p class="text-neutral-600" id="el-2u74zetv">Reveals neighborhood qualities for informed decisions.</p>
+                </div>
+            
+                <div class="bg-white border border-neutral-200 rounded-xl p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1" id="el-8sgqhjkt">
+                    <div class="flex justify-between items-start mb-4" id="el-n901kwvp">
+                        <h3 class="text-xl font-semibold pr-4" id="el-g5wqkq0r">CMHC Validator</h3>
+                        <span class="px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-blue-50 text-blue-500" id="el-m32r1l66">commercial</span>
+                    </div>
+                    <p class="text-neutral-600" id="el-4lhhnnvm">Streamlines compliance and planning for developers.</p>
+                </div>
+            </div>
+    </div>
+
+    <script>
+        const products = [
+            { name: 'Metro Vancouver School Space Finder', domain: 'education', type: 'free', description: 'Public tool helping families navigate school selection.' },
+            { name: 'The Catchment Maker', domain: 'education', type: 'commercial', description: 'Optimizes school boundaries and enrollment forecasting.' },
+            { name: 'Find a Doctor', domain: 'healthcare', type: 'free', description: 'Connects citizens with healthcare providers.' },
+            { name: 'Healthcare Optimizer', domain: 'healthcare', type: 'commercial', description: 'Plans and distributes healthcare resources efficiently.' },
+            { name: 'Canada\'s Civic Guide', domain: 'urban-planning', type: 'free', description: 'Visualizes municipal services and community assets.' },
+            { name: 'Social Infrastructure Optimizer', domain: 'urban-planning', type: 'commercial', description: 'Enhances planning decisions with cross-domain data.' },
+            { name: 'Real Estate Helper', domain: 'housing', type: 'low-cost', description: 'Reveals neighborhood qualities for informed decisions.' },
+            { name: 'CMHC Validator', domain: 'housing', type: 'commercial', description: 'Streamlines compliance and planning for developers.' }
+        ];
+
+        function renderProducts(filter = 'all') {
+            const grid = document.getElementById('products-grid');
+            const filteredProducts = filter === 'all' ? products : products.filter(p => p.domain === filter);
+            
+            grid.innerHTML = filteredProducts.map(product => `
+                <div class="bg-white border border-neutral-200 rounded-xl p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold pr-4">${product.name}</h3>
+                        <span class="px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider ${
+                            product.type === 'free' 
+                            ? 'bg-green-100 text-green-700' 
+                            : product.type === 'low-cost'
+                            ? 'bg-amber-100 text-amber-700'
+                            : 'bg-blue-50 text-blue-500'
+                        }">${product.type === 'low-cost' ? 'low cost' : product.type}</span>
+                    </div>
+                    <p class="text-neutral-600">${product.description}</p>
+                </div>
+            `).join('');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderProducts();
+
+            const buttons = document.querySelectorAll('.filter-button');
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    buttons.forEach(b => {
+                        b.classList.remove('active', 'bg-blue-500', 'border-blue-500', 'text-white');
+                        b.classList.add('border-neutral-200', 'text-neutral-700');
+                    });
+                    
+                    button.classList.add('active', 'bg-blue-500', 'border-blue-500', 'text-white');
+                    button.classList.remove('border-neutral-200', 'text-neutral-700');
+                    
+                    renderProducts(button.dataset.filter);
+                });
+            });
+        });
+    </script>
+</section>
+              
+              
+              
+              
+</element><element id="c446f19a-769d-4619-b932-152806d7ac85" data-section-id="c446f19a-769d-4619-b932-152806d7ac85">
+
+
+                
+                
+                
+                <section id="governance" class="py-24 px-4 md:px-8 lg:px-12">
+    <div class="max-w-3xl mx-auto" id="el-tovfz42y">
+        <div class="text-center mb-16" id="el-hbehtmj5">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-6" id="el-7bx63pyj">Beliefs &amp; Governance</h2>
+            <p class="text-lg text-neutral-600" id="el-8uhwugc4">
+                We build according to a clear set of beliefs, standardizing a governance model designed for long-range accountability and public trust.
+            </p>
+        </div>
+
+        <div class="space-y-6" id="governance-cards">
+            <div class="bg-white border border-neutral-200 rounded-xl overflow-hidden transition-all duration-300" id="el-8zcuwgsh">
+                <button class="w-full flex justify-between items-start p-8 text-left hover:bg-neutral-50 transition-colors" onclick="toggleCard(this)" aria-expanded="false" id="el-wfa918db">
+                    <div class="pr-8" id="el-nm51rtx2">
+                        <h3 class="text-xl font-semibold mb-3" id="el-w50b5ty7">AI Positioning: Agentic Planning</h3>
+                        <p class="text-neutral-600" id="el-n9uq3elj">We believe artificial intelligence must enhance public discretion, not override it. VTC's systems use "agentic planning" to encode memory, surface alignment, and translate data into shared understanding. We reject black-box automation.</p>
+                    </div>
+                    <span class="text-blue-500 text-2xl transform transition-transform duration-300" id="el-d52qqbjq">+</span>
+                </button>
+                <div class="hidden px-8 pb-8 border-t border-neutral-200" id="el-69x0lfku">
+                    <p class="text-neutral-600" id="el-x2gbn29i">VTC's AI agents are governed by a protocol-first architecture (Model Context Protocol). They trace every output to a visible input, respect institutional boundaries, and allow for oversight and audit. VTC uses AI to assist judgment and clarify tradeoffs, not to predict or overrule public action.</p>
+                </div>
+            </div>
+
+            <div class="bg-white border border-neutral-200 rounded-xl overflow-hidden transition-all duration-300" id="el-e1sro3k5">
+                <button class="w-full flex justify-between items-start p-8 text-left hover:bg-neutral-50 transition-colors" onclick="toggleCard(this)" aria-expanded="false" id="el-sy556m8g">
+                    <div class="pr-8" id="el-5s8tawkd">
+                        <h3 class="text-xl font-semibold mb-3" id="el-y3xsxid5">Field Ethos: Partnership, Not Vending</h3>
+                        <p class="text-neutral-600" id="el-eg0bgjf6">When VTC engages a region, we listen first. VTC shows up as partners, not vendors, entering civic ecosystems to align, not disrupt. VTC pattern-detects before prescribing solutions.</p>
+                    </div>
+                    <span class="text-blue-500 text-2xl transform transition-transform duration-300" id="el-fjgszfsb">+</span>
+                </button>
+                <div class="hidden px-8 pb-8 border-t border-neutral-200" id="el-wzgebbnb">
+                    <p class="text-neutral-600" id="el-z7ppyb2h">VTC's process is structured around Memoranda of Understanding, co-design workshops, and shared stewardship protocols. VTC builds with future stewards in mind, ensuring its systems last through turnover, elections, and generational change.</p>
+                </div>
+            </div>
+
+            <div class="bg-white border border-neutral-200 rounded-xl overflow-hidden transition-all duration-300" id="el-gbudjop9">
+                <button class="w-full flex justify-between items-start p-8 text-left hover:bg-neutral-50 transition-colors" onclick="toggleCard(this)" aria-expanded="false" id="el-pfiwhtbh">
+                    <div class="pr-8" id="el-e6fj1g3k">
+                        <h3 class="text-xl font-semibold mb-3" id="el-062c112f">Sustainable Access Model</h3>
+                        <p class="text-neutral-600" id="el-bksdvi3z">We believe infrastructure must be accessible and sustainable. VTC offers licensing structures that reflect institutional capacity and mission alignment, ensuring our civic mission is advanced with structural integrity.</p>
+                    </div>
+                    <span class="text-blue-500 text-2xl transform transition-transform duration-300" id="el-n1k0z2el">+</span>
+                </button>
+                <div class="hidden px-8 pb-8 border-t border-neutral-200" id="el-bte0bz86">
+                    <p class="text-neutral-600" id="el-b8lnrf39">VTC's monetization model includes: Licensed Tools (Catchment Maker, SID), Sponsorships for free tools, API/Data Services for commercial users, and Workshops/Consulting engagements. This balanced model supports version control, institutional adoption, and intergenerational durability.</p>
+                </div>
+            </div>
+
+            <div class="bg-white border border-neutral-200 rounded-xl overflow-hidden transition-all duration-300" id="el-lv1cj9yd">
+                <button class="w-full flex justify-between items-start p-8 text-left hover:bg-neutral-50 transition-colors" onclick="toggleCard(this)" aria-expanded="false" id="el-xtqnjdma">
+                    <div class="pr-8" id="el-2inft51d">
+                        <h3 class="text-xl font-semibold mb-3" id="el-ilots7ap">Governance &amp; Stewardship</h3>
+                        <p class="text-neutral-600" id="el-d4ituv4b">VTC tools are versioned and governed through feedback from civic partners, planning professionals, and institutional users. VTC seeks alignment, not dependency.</p>
+                    </div>
+                    <span class="text-blue-500 text-2xl transform transition-transform duration-300" id="el-y5dcu9l6">+</span>
+                </button>
+                <div class="hidden px-8 pb-8 border-t border-neutral-200" id="el-3smp9b63">
+                    <p class="text-neutral-600" id="el-6bgvg8rb">VTC maintains advisory pathways to ensure updates serve long-term institutional memory. Every version ships with documentation, rationale, and change tracking. VTC's tools are built to embed into existing workflows and support local discretion, not centralized control.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleCard(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('span');
+            const isExpanded = button.getAttribute('aria-expanded') === 'true';
+            
+            button.setAttribute('aria-expanded', !isExpanded);
+            
+            if (isExpanded) {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(45deg)';
+            }
+        }
+    </script>
+</section>
+              
+              
+              
+              
+</element><element id="cf6fe014-4d51-4cea-ac7c-484ecb0a17b9" data-section-id="cf6fe014-4d51-4cea-ac7c-484ecb0a17b9">
+
+
+                
+                
+                
+                <footer id="footer" class="border-t border-neutral-200 py-12">
+    <div class="max-w-7xl mx-auto px-4 md:px-8" id="el-u0micwdb">
+        <div class="flex flex-col items-center" id="el-8fuew5br">
+            <nav class="mb-8" id="el-zdth6wqo">
+                <ul class="flex flex-wrap justify-center gap-8" id="el-7h8g4yay">
+                    
+                        <li id="el-mgnvwr0n">
+                            <a href="#" class="text-neutral-600 hover:text-neutral-900 transition-colors" id="el-wuz81n7z" target="_self">
+                                About Us
+                            </a>
+                        </li>
+                    
+                        <li id="el-pmt1ud37">
+                            <a href="#" class="text-neutral-600 hover:text-neutral-900 transition-colors" id="el-kqy672sx" target="_self">
+                                VTC Builds
+                            </a>
+                        </li>
+                    
+                        <li id="el-ggdxrstb">
+                            <a href="#" class="text-neutral-600 hover:text-neutral-900 transition-colors" id="el-4n0maebj" target="_self">
+                                VTC Standardizes
+                            </a>
+                        </li>
+                    
+                        <li id="el-ehzynrym">
+                            <a href="#" class="text-neutral-600 hover:text-neutral-900 transition-colors" id="el-5xlb3kha" target="_self">
+                                Governance
+                            </a>
+                        </li>
+                    
+                </ul>
+            </nav>
+
+            <div class="text-center" id="el-yfpyoido">
+                <div class="text-sm text-neutral-600 mb-4" id="el-hcboisnq">
+                    Building civic infrastructure for public good.
+                </div>
+                <div class="text-sm text-neutral-500" id="el-pt1s285c">
+                    © <span id="current-year">2025</span> The Visual Thinking Company Inc.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</footer>
+              
+              
+              
+              
+</element></div>
+        </mountpoint>
+      </main>
+
+      <!-- Core functionality scripts -->
+      <script>
+        // Initialize interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+          // Add interactive behaviors
+          const interactiveElements = document.querySelectorAll('.interactive-element');
+          interactiveElements.forEach(element => {
+            element.addEventListener('mouseenter', () => {
+              element.classList.add('hover');
+            });
+            element.addEventListener('mouseleave', () => {
+              element.classList.remove('hover');
+            });
+          });
+
+          // Initialize any dynamic content
+          const dynamicContent = document.querySelectorAll('[data-dynamic]');
+          dynamicContent.forEach(content => {
+            // Add fade-in animation
+            content.classList.add('fade-in');
+          });
+        });
+
+        // Handle navigation
+        function handleNavigation(event) {
+          const link = event.currentTarget;
+          if (link.hasAttribute('data-nav')) {
+            event.preventDefault();
+            const target = link.getAttribute('data-nav');
+            document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+
+        // Initialize navigation
+        document.querySelectorAll('[data-nav]').forEach(link => {
+          link.addEventListener('click', handleNavigation);
+        });
+      </script>
+
+      <!-- Body Scripts -->
+      <script id="body-scripts">
+        // This script tag will be replaced with actual scripts.body content
+        if (window.scripts && window.scripts.body) {
+          document.getElementById('body-scripts').outerHTML = window.scripts.body;
+        }
+      </script>
+   </body>
+</html>
